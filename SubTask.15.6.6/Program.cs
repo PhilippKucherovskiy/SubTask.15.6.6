@@ -20,7 +20,12 @@ namespace Task1
 
             Console.WriteLine(string.Join(" ", allStudents));
         }
-
+        ///Метод ToArray/ <summary>
+        /// 
+        /// </summary>
+        /// <param name="classes"></param>
+        /// <returns></returns>      
+        
         static string[] GetAllStudents(Classroom[] classes)
         {
             var allStudents = classes.SelectMany(c => c.Students).ToArray();
